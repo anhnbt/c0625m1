@@ -32,18 +32,84 @@
   <img src="tom.gif" alt="Meo tom">
   <img src="avatar.jpg" alt="Avatar" width="500" height="auto">
 
-  <pre>
-    1. git init: khoi tao repository local (chay 1 lan duy nhat)
-    2. 
-      cach 1: git add filename (add tung file 1 (hoi lau nhung nen dung))
-      cach 2: git add . (add toan bo file vao vung staging can theo doi)
+  <div class="git-guide">
+    <h2>Hướng dẫn Git cơ bản</h2>
 
-    Cau hinh hinh ten va email:
-      git config user.name ....
-      git config user.email an.....
-    3. git commit -m "Noi dung" (No se tao snapshot)
-    4. git remote add origin linkurl
-  </pre>
+    <h3>1. Khởi tạo repository</h3>
+    <code>git init</code>
+    <p><em>Khởi tạo repository local (chỉ chạy 1 lần duy nhất)</em></p>
+
+    <h3>2. Thêm file vào staging area</h3>
+    <p><strong>Cách 1:</strong> Thêm từng file</p>
+    <code>git add filename</code>
+    <p><em>Thêm từng file một (hơi lâu nhưng nên dùng)</em></p>
+
+    <p><strong>Cách 2:</strong> Thêm tất cả file</p>
+    <code>git add .</code>
+    <p><em>Thêm toàn bộ file vào vùng staging cần theo dõi</em></p>
+
+    <h3>3. Cấu hình tên và email</h3>
+    <code>git config user.name "Tên của bạn"</code><br>
+    <code>git config user.email "email@example.com"</code>
+
+    <h3>4. Tạo commit</h3>
+    <code>git commit -m "Nội dung commit"</code>
+    <p><em>Tạo snapshot của code</em></p>
+
+    <h3>5. Kết nối với remote repository</h3>
+    <code>git remote add origin [URL]</code>
+    <p><em>Kết nối với repository trên GitHub/GitLab</em></p>
+
+    <h3>6. Đẩy code lên remote</h3>
+    <code>git push origin main</code>
+    <p><em>Đẩy code lên branch main của remote repository</em></p>
+  </div>
+
+  <style>
+    .git-guide {
+      background-color: #f5f5f5;
+      padding: 20px;
+      border-radius: 8px;
+      margin: 20px 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .git-guide h2 {
+      color: #333;
+      border-bottom: 2px solid #007acc;
+      padding-bottom: 10px;
+    }
+
+    .git-guide h3 {
+      color: #007acc;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    .git-guide code {
+      background-color: #2d2d2d;
+      color: #f8f8f2;
+      padding: 8px 12px;
+      border-radius: 4px;
+      font-family: 'Courier New', monospace;
+      display: inline-block;
+      margin: 5px 0;
+    }
+
+    .git-guide p {
+      margin: 8px 0;
+      line-height: 1.5;
+    }
+
+    .git-guide em {
+      color: #666;
+      font-style: italic;
+    }
+
+    .git-guide strong {
+      color: #333;
+    }
+  </style>
 </body>
 
 </html>
